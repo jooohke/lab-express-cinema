@@ -3,6 +3,23 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#list-movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#list-movies p:nth-child(2) {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#list-movies li {
+  list-style-type: none;
+  margin: 1em 2.5em;
+}
+
+#list-movies p {
+  text-align: center;
 }
