@@ -23,3 +23,8 @@ body {
 #list-movies p {
   text-align: center;
 }
+
+#one-class {
+  display: flex;
+  flex-direction: row;
+}

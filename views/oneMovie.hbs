@@ -1,18 +1,29 @@
-<a href="/movies">Go back</a>
+<a href="/movies" id="go-back">Go back</a>
 
-<h3>{{this.title}}</h3>
+<div id="one-class">
 
-<p>Director: {{this.director}}</p>
+<div>
+    <img src='{{movie.image}}' alt="poster {{movie.title}}">
+</div>
 
-<p>Stars</p>
+<div>
 
-<ul>
-    {{#each this.stars}}
-    <li>{{this.stars}}</li>
-    {{/each}}
-</ul>
+    <h3>{{movie.title}}</h3>
 
-<p>{{this.description}}</p>
+    <p>Director: {{movie.director}}</p>
+
+    <p>Stars</p>
+
+    <ul>
+        {{#each movie.stars}}
+        <li>{{this.stars}}</li>
+        {{/each}}
+    </ul>
+
+    <p>{{movie.description}}</p>
+</div>
+
+</div>
 
 
 
